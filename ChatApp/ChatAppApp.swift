@@ -15,6 +15,12 @@ struct ChatAppApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                        LocalNotificationManager.shared.requestNotificationPermision()
+                        LocalNotificationManager.shared.scheduleTestNotification()
+                    })
+                }
         }
     }
 }
