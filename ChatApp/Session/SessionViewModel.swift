@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public class SessionViewModel: ObservableObject {
+    @Published public var user: User? = nil
+}
