@@ -7,6 +7,8 @@
 
 import Foundation
 
-public class User {
-    
+public class User: Codable {
+    public var id: String
+    public var name: String
+    public var email: String
 }

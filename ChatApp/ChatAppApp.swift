@@ -9,16 +9,19 @@ import SwiftUI
 
 @main
 struct ChatAppApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    //---- MARK: Properties
+    //---- App delegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @StateObject var appSession: SessionViewModel = SessionViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(appSession)
                 .onAppear {
+                    AuthenticationManager.shared.checkAuthentication()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                         LocalNotificationManager.shared.requestNotificationPermision()
                         LocalNotificationManager.shared.scheduleTestNotification()

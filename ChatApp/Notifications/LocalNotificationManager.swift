@@ -42,6 +42,7 @@ public class LocalNotificationManager: NSObject {
         content.body = "This is a local notification"
         content.sound = .default
         content.attachments.append(try! UNNotificationAttachment(identifier: "image", url: tempDirectory))
+        content.subtitle = "I don't know"
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)

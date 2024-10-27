@@ -13,7 +13,7 @@ struct ChatListItem: View {
             Image(systemName: "person.circle.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 50)
+                .frame(height: 48)
             VStack(alignment: .leading) {
                 Text("John Doe")
                     .font(.headline)

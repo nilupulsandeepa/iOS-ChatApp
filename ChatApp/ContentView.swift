@@ -18,6 +18,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(SessionViewModel())
+    ContentView().environmentObject(SessionViewModel())
 }

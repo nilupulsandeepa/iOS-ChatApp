@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    //---- MARK: Properties
+    @EnvironmentObject var appSession: SessionViewModel
     @State var isSignInButtonAnimated: Bool = false
     @State var isSignInButtonInteractionEnabled: Bool = true
     
@@ -17,7 +19,7 @@ struct LoginView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100)
-            Text("Sign With Google")
+            Text("SignIn With Google")
                 .padding()
                 .padding([.leading, .trailing], 20)
                 .overlay {
@@ -34,7 +36,7 @@ struct LoginView: View {
                         withAnimation {
                             isSignInButtonAnimated = false
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15, execute: {
-                                print("Button Pressed")
+                                AuthenticationManager.shared.startGoogleSignInFlow()
                                 isSignInButtonInteractionEnabled = true
                             })
                         }

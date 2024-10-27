@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5167EED12CCB8C36005FD8EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5167EED02CCB8C36005FD8EF /* GoogleService-Info.plist */; };
+		5167EED32CCB8DAD005FD8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167EED22CCB8DAD005FD8EF /* AppDelegate.swift */; };
+		5167EED62CCBD202005FD8EF /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167EED52CCBD202005FD8EF /* AppError.swift */; };
+		5177ABC62CCD31D500FD55DA /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177ABC52CCD31D500FD55DA /* IconButtonView.swift */; };
+		51CFCE972CCCC96E00C510C4 /* FIRDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE962CCCC96E00C510C4 /* FIRDatabaseManager.swift */; };
+		51CFCE992CCCDCA500C510C4 /* NameSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */; };
+		51CFCE9C2CCD0A2500C510C4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE9B2CCD0A2500C510C4 /* UserDefaultsManager.swift */; };
 		51DDB8E82CCA0294003A9445 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB8E72CCA0294003A9445 /* ChatListView.swift */; };
 		51DDB8EE2CCA034D003A9445 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB8ED2CCA034D003A9445 /* LoginView.swift */; };
 		51DDB8F22CCA0D46003A9445 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB8F12CCA0D46003A9445 /* AuthenticationViewModel.swift */; };
@@ -31,6 +37,13 @@
 
 /* Begin PBXFileReference section */
 		5167EED02CCB8C36005FD8EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5167EED22CCB8DAD005FD8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5167EED52CCBD202005FD8EF /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		5177ABC52CCD31D500FD55DA /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
+		51CFCE942CCC9BFF00C510C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		51CFCE962CCCC96E00C510C4 /* FIRDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseManager.swift; sourceTree = "<group>"; };
+		51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaces.swift; sourceTree = "<group>"; };
+		51CFCE9B2CCD0A2500C510C4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		51DDB8E72CCA0294003A9445 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		51DDB8ED2CCA034D003A9445 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		51DDB8F12CCA0D46003A9445 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -64,6 +77,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5167EED42CCBD1E8005FD8EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5167EED52CCBD202005FD8EF /* AppError.swift */,
+				51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		51CFCE952CCCC35100C510C4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				51CFCE962CCCC96E00C510C4 /* FIRDatabaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		51CFCE9A2CCD086E00C510C4 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				51CFCE9B2CCD0A2500C510C4 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		51DDB8E32CCA0072003A9445 /* ChatList */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +124,7 @@
 			children = (
 				51DDB8E72CCA0294003A9445 /* ChatListView.swift */,
 				51DDB9002CCA62FF003A9445 /* ChatListItem.swift */,
+				5177ABC52CCD31D500FD55DA /* IconButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +205,10 @@
 		51ED07A82CC922BC00D8014F /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				51CFCE9A2CCD086E00C510C4 /* UserDefaults */,
+				51CFCE952CCCC35100C510C4 /* Firebase */,
+				51CFCE942CCC9BFF00C510C4 /* Info.plist */,
+				5167EED42CCBD1E8005FD8EF /* Utils */,
 				5167EED02CCB8C36005FD8EF /* GoogleService-Info.plist */,
 				51DDB8F62CCA0F97003A9445 /* Notifications */,
 				51DDB8F32CCA0D85003A9445 /* Session */,
@@ -177,6 +220,7 @@
 				51ED07B22CC922BE00D8014F /* Persistence.swift */,
 				51ED07B42CC922BE00D8014F /* ChatApp.xcdatamodeld */,
 				51ED07AF2CC922BE00D8014F /* Preview Content */,
+				5167EED22CCB8DAD005FD8EF /* AppDelegate.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -272,11 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5167EED32CCB8DAD005FD8EF /* AppDelegate.swift in Sources */,
 				51DDB8EE2CCA034D003A9445 /* LoginView.swift in Sources */,
+				51CFCE972CCCC96E00C510C4 /* FIRDatabaseManager.swift in Sources */,
 				51ED07B32CC922BE00D8014F /* Persistence.swift in Sources */,
 				51DDB8F22CCA0D46003A9445 /* AuthenticationViewModel.swift in Sources */,
+				5167EED62CCBD202005FD8EF /* AppError.swift in Sources */,
+				51CFCE9C2CCD0A2500C510C4 /* UserDefaultsManager.swift in Sources */,
 				51DDB8E82CCA0294003A9445 /* ChatListView.swift in Sources */,
 				51DDB8F52CCA0D8E003A9445 /* SessionViewModel.swift in Sources */,
+				5177ABC62CCD31D500FD55DA /* IconButtonView.swift in Sources */,
+				51CFCE992CCCDCA500C510C4 /* NameSpaces.swift in Sources */,
 				51ED07B62CC922BE00D8014F /* ChatApp.xcdatamodeld in Sources */,
 				51DDB8F82CCA0FA5003A9445 /* LocalNotificationManager.swift in Sources */,
 				51ED07AC2CC922BC00D8014F /* ContentView.swift in Sources */,
@@ -419,6 +469,7 @@
 				DEVELOPMENT_TEAM = MKK9FRT2U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +499,7 @@
 				DEVELOPMENT_TEAM = MKK9FRT2U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
