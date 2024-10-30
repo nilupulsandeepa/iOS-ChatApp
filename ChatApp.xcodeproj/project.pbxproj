@@ -11,6 +11,7 @@
 		5167EED32CCB8DAD005FD8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167EED22CCB8DAD005FD8EF /* AppDelegate.swift */; };
 		5167EED62CCBD202005FD8EF /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167EED52CCBD202005FD8EF /* AppError.swift */; };
 		5177ABC62CCD31D500FD55DA /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177ABC52CCD31D500FD55DA /* IconButtonView.swift */; };
+		51B3CF892CD2A6D9008B2DB6 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3CF882CD2A6D9008B2DB6 /* ChatListViewModel.swift */; };
 		51CFCE972CCCC96E00C510C4 /* FIRDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE962CCCC96E00C510C4 /* FIRDatabaseManager.swift */; };
 		51CFCE992CCCDCA500C510C4 /* NameSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */; };
 		51CFCE9C2CCD0A2500C510C4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFCE9B2CCD0A2500C510C4 /* UserDefaultsManager.swift */; };
@@ -40,6 +41,7 @@
 		5167EED22CCB8DAD005FD8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5167EED52CCBD202005FD8EF /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		5177ABC52CCD31D500FD55DA /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
+		51B3CF882CD2A6D9008B2DB6 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 		51CFCE942CCC9BFF00C510C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		51CFCE962CCCC96E00C510C4 /* FIRDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseManager.swift; sourceTree = "<group>"; };
 		51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaces.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		51DDB8E62CCA008E003A9445 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				51B3CF882CD2A6D9008B2DB6 /* ChatListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				51ED07B32CC922BE00D8014F /* Persistence.swift in Sources */,
 				51DDB8F22CCA0D46003A9445 /* AuthenticationViewModel.swift in Sources */,
 				5167EED62CCBD202005FD8EF /* AppError.swift in Sources */,
+				51B3CF892CD2A6D9008B2DB6 /* ChatListViewModel.swift in Sources */,
 				51CFCE9C2CCD0A2500C510C4 /* UserDefaultsManager.swift in Sources */,
 				51DDB8E82CCA0294003A9445 /* ChatListView.swift in Sources */,
 				51DDB8F52CCA0D8E003A9445 /* SessionViewModel.swift in Sources */,

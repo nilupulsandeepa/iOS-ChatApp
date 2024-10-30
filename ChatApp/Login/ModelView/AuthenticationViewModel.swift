@@ -115,6 +115,7 @@ public class AuthenticationManager {
             if let self {
                 self.userLoginStateChanged(isLoggedIn: user != nil)
             }
+            
         }
     }
 }

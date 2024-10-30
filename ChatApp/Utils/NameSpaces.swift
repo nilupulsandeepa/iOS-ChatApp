@@ -11,6 +11,7 @@ public struct NameSpaces {
     public struct Notifications {
         public static let userDidLogInSuccessfully: String = "com.nilupulsandeepa.chatapp.notifications.userloginsuccess"
         public static let userLoginStateChanged: String = "com.nilupulsandeepa.chatapp.notifications.userloginstatechanged"
+        public static let userAuthenticationStatusChecked: String = "com.nilupulsandeepa.chatapp.notifications.userAuthenticationStatusChecked"
         
         public struct UserInfoKeys {
             public static let loggedInUserData: String = "notification.loggedInUserData"

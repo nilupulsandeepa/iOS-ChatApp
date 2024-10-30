@@ -36,6 +36,10 @@ public class SessionViewModel: ObservableObject {
         )
     }
     
+    private func broadcastAuthenticationCheckNotification() {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NameSpaces.Notifications.userAuthenticationStatusChecked), object: self, userInfo: nil)
+    }
+    
     @objc private func userLoginSuccess(notification: Notification) {
         let loggedInUserData: Data = notification.userInfo![NameSpaces.Notifications.UserInfoKeys.loggedInUserData] as! Data
         guard let userObject: User = try? JSONDecoder().decode(User.self, from: loggedInUserData) else {
@@ -67,5 +71,7 @@ public class SessionViewModel: ObservableObject {
             user = nil
             print("User Logged Out")
         }
+        
+        broadcastAuthenticationCheckNotification()
     }
 }
