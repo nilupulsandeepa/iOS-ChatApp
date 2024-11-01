@@ -22,7 +22,7 @@ public class ChatListViewModel: ObservableObject {
     }
     
     @objc private func handleAuhenticationSuccess(notification: Notification) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        Utils.delayExecution(seconds: 2.0) {
             [weak self] in
             if let self {
                 self.isAuthenticationChecking = false

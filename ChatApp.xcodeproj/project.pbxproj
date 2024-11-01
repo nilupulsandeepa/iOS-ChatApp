@@ -24,6 +24,7 @@
 		51DDB8FD2CCA1C42003A9445 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 51DDB8FC2CCA1C42003A9445 /* GoogleSignInSwift */; };
 		51DDB8FF2CCA49BC003A9445 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB8FE2CCA49BC003A9445 /* User.swift */; };
 		51DDB9012CCA62FF003A9445 /* ChatListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDB9002CCA62FF003A9445 /* ChatListItem.swift */; };
+		51E937BD2CD342AB008FEA6D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E937BC2CD342AB008FEA6D /* Utils.swift */; };
 		51ED07AA2CC922BC00D8014F /* ChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ED07A92CC922BC00D8014F /* ChatAppApp.swift */; };
 		51ED07AC2CC922BC00D8014F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ED07AB2CC922BC00D8014F /* ContentView.swift */; };
 		51ED07AE2CC922BE00D8014F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ED07AD2CC922BE00D8014F /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		51DDB8F72CCA0FA5003A9445 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		51DDB8FE2CCA49BC003A9445 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		51DDB9002CCA62FF003A9445 /* ChatListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListItem.swift; sourceTree = "<group>"; };
+		51E937BC2CD342AB008FEA6D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		51ED07A62CC922BC00D8014F /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ED07A92CC922BC00D8014F /* ChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppApp.swift; sourceTree = "<group>"; };
 		51ED07AB2CC922BC00D8014F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				5167EED52CCBD202005FD8EF /* AppError.swift */,
 				51CFCE982CCCDCA500C510C4 /* NameSpaces.swift */,
+				51E937BC2CD342AB008FEA6D /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				51ED07AC2CC922BC00D8014F /* ContentView.swift in Sources */,
 				51DDB8FF2CCA49BC003A9445 /* User.swift in Sources */,
 				51ED07AA2CC922BC00D8014F /* ChatAppApp.swift in Sources */,
+				51E937BD2CD342AB008FEA6D /* Utils.swift in Sources */,
 				51DDB9012CCA62FF003A9445 /* ChatListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
